@@ -9,8 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- use CRA to initial project.
-- add `craco`, `craco-less`, `antd`, set `webpack alias`, import plugin, `decorator` plugin.
-- add config router.
-- add `.editorconfig` and `prettier`.
-- add `README`.
+- Use CRA to initial project.
+- Add `craco`, `craco-less`, `antd`, set `webpack alias`, import plugin, `decorator` plugin.
+- Add config router.
+- Add `.editorconfig` and `prettier`.
+- Add `README`.
+
+## 1.0.1 - 2020-12-05
+
+### Changed
+
+- Add `PUBLIC_URL=$npm_package_config_public` for build script.
