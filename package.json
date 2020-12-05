@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "cross-env PORT=$npm_package_config_port PUBLIC_URL=$npm_package_config_public craco start",
-    "build": "cross-env GENERATE_SOURCEMAP=false craco build",
+    "build": "cross-env PUBLIC_URL=$npm_package_config_public GENERATE_SOURCEMAP=false craco build",
     "test": "craco test",
     "format": "prettier --write \"src/**/*.{js,jsx,css,less}\"",
     "lint": "eslint --ext js src --max-warnings 0"
