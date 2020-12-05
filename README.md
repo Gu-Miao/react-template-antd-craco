@@ -98,7 +98,7 @@ We use a simple router config, the config file is `src/router.js`, see `src/App.
 
 ### Why not use a status management library?
 
-You could do want ever you want, so, we'd like to give it to you.
+You could do what ever you want, so, we'd like to give it to you.
 
 ## License
 
