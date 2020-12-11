@@ -7,8 +7,6 @@ import zh_ch from 'antd/es/locale/zh_CN'
 import router from '@/router'
 import './style.less'
 
-console.log(process.env)
-
 const App = () => {
   return (
     <ConfigProvider locale={zh_ch}>
