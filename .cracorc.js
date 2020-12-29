@@ -6,7 +6,10 @@ module.exports = {
   babel: {},
   webpack: {
     alias: {
-      '@components': resloveSrc('components')
+      '@assets': resloveSrc('assets'),
+      '@components': resloveSrc('components'),
+      '@pages': resloveSrc('pages'),
+      '@utils': resloveSrc('utils')
     }
   }
 }
