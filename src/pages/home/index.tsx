@@ -1,3 +1,5 @@
+import { Button } from 'antd'
+
 import logo from '@assets/logo.svg'
 
 import './style.scss'
@@ -18,6 +20,7 @@ function Home() {
         >
           Learn React
         </a>
+        <Button type="primary">Antd Button</Button>
       </header>
     </div>
   )
