@@ -4,11 +4,6 @@
     height: 40vmin;
     pointer-events: none;
   }
-  @media (prefers-reduced-motion: no-preference) {
-    .home-logo {
-      animation: home-logo-spin infinite 20s linear;
-    }
-  }
   .home-header {
     background-color: #282c34;
     min-height: 100vh;
@@ -22,12 +17,19 @@
   .home-link {
     color: #61dafb;
   }
-  @keyframes home-logo-spin {
-    from {
-      transform: rotate(0deg);
+
+  @media (prefers-reduced-motion: no-preference) {
+    .home-logo {
+      animation: home-logo-spin infinite 20s linear;
     }
-    to {
-      transform: rotate(360deg);
-    }
+  }
+}
+
+@keyframes home-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
