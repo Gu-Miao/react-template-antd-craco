@@ -1,0 +1,17 @@
+# dependencies
+/node_modules
+
+# template
+/public
+
+# dist
+/buld
+
+# project files
+.gitignore
+CHANGELOG
+
+# lock files
+package-lock.json
+yarn.lock
+yarn-*
