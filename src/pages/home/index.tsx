@@ -1,4 +1,4 @@
-import logo from '@assets/log.svg'
+import logo from '@assets/logo.svg'
 
 import './style.scss'
 
