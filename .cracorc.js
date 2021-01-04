@@ -1,4 +1,5 @@
 const path = require('path')
+const CracoLessPlugin = require('craco-less')
 
 const resloveSrc = (...paths) => path.join(__dirname, 'src', ...paths)
 
@@ -17,5 +18,18 @@ module.exports = {
       '@pages': resloveSrc('pages'),
       '@utils': resloveSrc('utils')
     }
-  }
+  },
+  plugins: [
+    {
+      plugin: CracoLessPlugin,
+      options: {
+        lessLoaderOptions: {
+          lessOptions: {
+            modifyVars: {},
+            javascriptEnabled: true
+          }
+        }
+      }
+    }
+  ]
 }
