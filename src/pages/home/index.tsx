@@ -2,7 +2,7 @@ import { Button } from 'antd'
 
 import logo from '@assets/logo.svg'
 
-import './style.scss'
+import './style.less'
 
 function Home() {
   return (
