@@ -6,7 +6,7 @@ import routers from '@/router'
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <CacheSwitch>
         {routers.map(({ component, when, ...restProps }, key) => {
           const Comp = when ? CacheRoute : Route
