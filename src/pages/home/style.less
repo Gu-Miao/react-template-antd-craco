@@ -1,7 +1,35 @@
 #home {
-  background: #999;
-  padding: 16px;
-  .btn-wrapper {
-    text-align: center;
+  text-align: center;
+  .home-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  .home-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .home-link {
+    color: #61dafb;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .home-logo {
+      animation: home-logo-spin infinite 20s linear;
+    }
+  }
+}
+
+@keyframes home-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

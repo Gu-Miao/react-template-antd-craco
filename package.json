@@ -1,39 +1,5 @@
 {
-  "name": "react-template",
-  "version": "1.0.1",
-  "description": "react template based on CRA",
-  "keywords": [
-    "react",
-    "template",
-    "antd",
-    "less",
-    "decorator"
-  ],
-  "repository": {
-    "url": "git+https://github.com/Gu-Miao/react-template.git",
-    "type": "git"
-  },
-  "homepage": "https://github.com/Gu-Miao/react-template",
-  "config": {
-    "port": "4000",
-    "public": "."
-  },
-  "scripts": {
-    "start": "cross-env PORT=$npm_package_config_port PUBLIC_URL=$npm_package_config_public craco start",
-    "build": "cross-env PUBLIC_URL=$npm_package_config_public GENERATE_SOURCEMAP=false craco build",
-    "test": "craco test",
-    "format": "prettier --write \"src/**/*.{js,jsx,css,less}\"",
-    "lint": "eslint --ext js src --max-warnings 0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint"
-    }
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
+  "name": "react-template-antd-craco",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -46,27 +12,39 @@
       "last 1 safari version"
     ]
   },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "fix": "eslint --fix ."
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "antd": "^4.8.4",
-    "axios": "^0.19.2",
-    "classnames": "^2.2.6",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-cache-route": "^1.10.0",
+    "antd": "^4.9.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-cache-route": "^1.10.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.3"
+    "web-vitals": "^0.2.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.10.4",
-    "@craco/craco": "^5.6.4",
-    "babel-plugin-import": "^1.13.0",
-    "craco-less": "^1.17.0",
-    "cross-env": "^7.0.2",
-    "http-proxy-middleware": "^1.0.4",
-    "husky": "^4.3.0",
-    "prettier": "^2.0.5"
+    "@babel/plugin-proposal-decorators": "^7.12.12",
+    "@craco/craco": "^6.0.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.6",
+    "babel-plugin-import": "^1.13.3",
+    "craco-less": "^1.17.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "http-proxy-middleware": "^1.0.6",
+    "husky": "^4.3.6",
+    "prettier": "^2.2.1",
+    "react-scripts": "4.0.1",
+    "typescript": "^4.0.3"
   }
 }
