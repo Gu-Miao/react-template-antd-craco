@@ -8,17 +8,17 @@
 
 ## Start up
 
-1. clone template
+1. Clone template
 
 ```bash
 git clone https://github.com/Gu-Miao/react-template.git
 ```
 
-2. remove useless files and config
+2. Remove useless files and config
 
 If you don't use antd, you could remove it, if you don't use uuid, you could remove it too. Do what ever you want.
 
-3. add dependencies
+3. Add dependencies
 
 ```bash
 npm install
@@ -27,7 +27,7 @@ npm install
 yarn
 ```
 
-4. start dev server
+4. Start dev server
 
 ```bash
 npm start
@@ -36,13 +36,13 @@ npm start
 yarn start
 ```
 
-Wait a moment, you could see your page on https://localhost:3000.
+Wait a moment, you could see your page on https://localhost:5000.
 
 ## Config
 
 ### Use antd-mobile
 
-remove antd and add antd-mobile
+Remove `antd` and add `antd-mobile`
 
 ```bash
 npm uninstall antd
@@ -53,39 +53,31 @@ yarn remove antd
 yarn add antd-mobile
 ```
 
-change `libraryName` from `antd` to `antd-mobile` in `craco.config.js`.
+change `libraryName` from `antd` to `antd-mobile` in `.cracorc.js`.
 
-> If you neither use antd nor antd-mobile, you can directly remove import plugin in craco.config.js and uninstall it.
+> If you neither use `antd` nor `antd-mobile`, you can directly remove import plugin in `.cracorc.js` and uninstall it.
 
 ### Modify webpack alias
 
-See craco.config.js and jsconfig.json.
+See `.cracorc.js` and `jsconfig.json`.
 
 ### Change dev server port
 
-Modify it in `config` in package.json like below:
-
-```json
-{
-  "config": {
-    "port": "4000"
-  }
-}
-```
+Set `PORT` in `.env`.
 
 ### Add source map for production build
 
-Remove cross-env GENERATE_SOURCEMAP=false in build script.
+Set `GENERATE_SOURCEMAP` in `.env` to `false`.
 
 ### Set proxy
 
 see `src/setupProxy.js`。
 
+## Advanced
+
 ### Set webpack
 
 We use `craco` to customize webpack, eslint and babel, if you need advanced usage, please read its official document.
-
-## Advanced
 
 ### config router
 
