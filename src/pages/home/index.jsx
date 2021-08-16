@@ -1,4 +1,5 @@
 import { Button } from 'antd'
+import { Link } from 'react-router-dom'
 
 import logo from '@assets/logo.svg'
 
@@ -20,7 +21,9 @@ function Home() {
         >
           Learn React
         </a>
-        <Button type="primary">Antd Button</Button>
+        <Button type="primary">
+          <Link to="/examples">View Examples</Link>
+        </Button>
       </header>
     </div>
   )
