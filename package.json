@@ -5,7 +5,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "fix": "eslint --fix .",
+    "fix": "eslint --fix src",
     "lint": "eslint --ext js,jsx src --max-warnings 0"
   },
   "dependencies": {
