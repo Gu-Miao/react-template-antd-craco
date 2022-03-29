@@ -1,4 +1,6 @@
 # React tempate
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FGu-Miao%2Freact-template-antd-craco.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FGu-Miao%2Freact-template-antd-craco?ref=badge_shield)
+
 
 **[中文文档](./README_zh.md) | English**
 
@@ -95,3 +97,6 @@ You could do what ever you want, so, we'd like to give it to you.
 ## License
 
 MIT
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FGu-Miao%2Freact-template-antd-craco.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FGu-Miao%2Freact-template-antd-craco?ref=badge_large)
