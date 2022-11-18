@@ -84,13 +84,21 @@ We use `craco` to customize webpack, eslint and babel, if you need advanced usag
 We use a simple router config, the config file is `src/router.js`, see `src/App.js`, you could now how it render routes. Though it is easy to read, but it still have something to pay your attention:
 
 1. No nesting supported.
-2. You could add when to use cache route, it is based on [eact-router-cache-route](https://github.com/CJY0208/react-router-cache-route).
+2. You could add when to use cache route, it is based on [react-router-cache-route](https://github.com/CJY0208/react-router-cache-route).
 3. Key `component` has a prefix `@pages/`.
 4. Key `title` is use to modify `document.title` when `Route` rendered.
 
 ### Why not use a status management library?
 
 You could do what ever you want, so, we'd like to give it to you.
+
+## Versions
+
+- CRA 4
+- craco 6
+- React 17
+- antd 4
+- react-router 5
 
 ## License
 
