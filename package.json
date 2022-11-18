@@ -1,33 +1,38 @@
 {
   "name": "react-template-antd-craco",
-  "version": "2.1.0",
   "scripts": {
+    "postinstall": "husky install",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "fix": "eslint --fix src",
-    "lint": "eslint --ext js,jsx src --max-warnings 0"
+    "fix": "eslint --fix ."
   },
   "dependencies": {
-    "antd": "^4.16.8",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-cache-route": "^1.11.1",
-    "react-router-dom": "^5.2.0",
-    "web-vitals": "^1.0.1"
+    "@reduxjs/toolkit": "^1.9.0",
+    "accessible-nprogress": "^2.1.2",
+    "antd": "5.0.0-rc.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.3",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.14.5",
-    "@craco/craco": "^6.2.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "babel-plugin-import": "^1.13.3",
-    "craco-less": "^1.18.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "http-proxy-middleware": "^2.0.1",
-    "prettier": "^2.3.2",
-    "react-scripts": "4.0.3"
+    "@craco/craco": "^7.0.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.3",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "react-scripts": "5.0.1",
+    "sass": "^1.56.1",
+    "typescript": "^4.9.3"
   }
 }

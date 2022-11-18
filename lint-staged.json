@@ -1,0 +1,6 @@
+{
+  "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+  "*.{scss,less,css,html,md}": ["prettier --write"],
+  "package.json": ["prettier --write"],
+  "{!(package)*.json,.!(browserslist)*rc}": ["prettier --write--parser json"]
+}
