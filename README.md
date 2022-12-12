@@ -15,6 +15,12 @@ A simple react project template using [create-react-app](https://create-react-ap
 - `eslint`, `prettier`
 - `typescript`
 
+> There is also an old version of template using `cra@4`, see [this](https://github.com/Gu-Miao/react-template-antd-craco/tree/cra4).
+
+## References
+
+- [After seting up with pnpm, thne, when it runs, there is an error 'Property 'toBeInTheDocument' does not exist on type 'JestMatchers<HTMLElement>' in App.test.tsx #12622](https://github.com/facebook/create-react-app/issues/12622)
+
 ## LICENSE
 
 MIT
