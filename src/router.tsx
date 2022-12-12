@@ -10,6 +10,8 @@ function getLazyComponent(path: string): ReactNode {
 
 const routes: RouteObject[] = [
   { path: '/', element: <Home /> },
+  { path: '/list', element: getLazyComponent('List') },
+  { path: '/counter', element: getLazyComponent('Counter') },
   { path: '*', element: getLazyComponent('Error') }
 ]
 

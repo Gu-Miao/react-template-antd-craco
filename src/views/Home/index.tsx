@@ -1,4 +1,4 @@
-import { Button } from 'antd'
+import { Button, Space } from 'antd'
 import logo from './logo.svg'
 import './index.scss'
 
@@ -7,12 +7,15 @@ function Home() {
     <div className="Home">
       <header className="header">
         <img src={logo} className="logo" alt="logo" draggable="false" />
-        <p>
-          Edit <code>src/Home.tsx</code> and save to reload.
-        </p>
-        <Button type="primary" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </Button>
+        <h1 className="title">Hello React!!</h1>
+        <Space>
+          <Button type="primary" size="large" href="/list">
+            To list page
+          </Button>
+          <Button size="large" href="/counter">
+            To counter page
+          </Button>
+        </Space>
       </header>
     </div>
   )

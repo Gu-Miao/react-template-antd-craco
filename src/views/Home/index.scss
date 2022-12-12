@@ -9,11 +9,16 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
+  }
+
+  .title {
     color: white;
+    user-select: none;
+    margin-top: 0;
   }
 
   .logo {
-    height: 40vmin;
+    height: 30vmin;
     pointer-events: none;
     user-select: none;
   }
