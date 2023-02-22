@@ -9,14 +9,14 @@
  * https://github.com/chimurai/http-proxy-middleware
  *
  */
-// const { createProxyMiddleware } = require('http-proxy-middleware')
+const { createProxyMiddleware } = require('http-proxy-middleware')
 
-// module.exports = app => {
-//   app.use(
-//     '/path/to/api',
-//     createProxyMiddleware({
-//       target: 'https://some.api.address',
-//       changeOrigin: true
-//     })
-//   )
-// }
+module.exports = app => {
+  app.use(
+    '/path/to/api',
+    createProxyMiddleware({
+      target: 'https://some.api.address',
+      changeOrigin: true
+    })
+  )
+}
