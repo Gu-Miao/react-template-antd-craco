@@ -1,5 +1,5 @@
 import { lazy, ReactNode } from 'react'
-import { RouteObject } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom'
 import Home from './views/Home'
 
 function getLazyComponent(path: string): ReactNode {
@@ -8,11 +8,12 @@ function getLazyComponent(path: string): ReactNode {
   return <Component />
 }
 
-const routes: RouteObject[] = [
-  { path: '/', element: <Home /> },
-  { path: '/list', element: getLazyComponent('List') },
-  { path: '/counter', element: getLazyComponent('Counter') },
-  { path: '*', element: getLazyComponent('Error') }
-]
-
-export default routes
+export default createBrowserRouter(
+  [
+    { index: true, element: <Home /> },
+    { path: 'list', element: getLazyComponent('List') },
+    { path: 'counter', element: getLazyComponent('Counter') },
+    { path: '*', element: getLazyComponent('Error') }
+  ],
+  { basename: process.env.PUBLIC_URL }
+)
